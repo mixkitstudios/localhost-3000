@@ -153,7 +153,7 @@ exports.Products = {
                             return [4 /*yield*/, stripe_1.stripe.products.create({
                                     name: data.name,
                                     default_price_data: {
-                                        currency: 'INR',
+                                        currency: 'USD',
                                         unit_amount: Math.round(data.price * 100),
                                     },
                                 })];
